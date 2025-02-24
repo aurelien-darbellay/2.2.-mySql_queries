@@ -15,7 +15,7 @@ select apellido1,apellido2, persona.nombre,departamento.nombre as Departamento f
 /*7*/
 select apellido1,apellido2, persona.nombre,departamento.nombre as Departamento from persona inner join profesor on persona.id = id_profesor inner join departamento on departamento.id = profesor.id_departamento order by apellido1, apellido2, persona.nombre asc;
 /*8*/
-select departamento.nombre as Departamento from profesor inner join departamento on departamento.id = profesor.id_departamentoinner join asignatura on profesor.id_profesor = asignatura.id_profesor inner join grado on asignatura.id_grado = grado.id group by departamento.nombre;
+select departamento.nombre as Departamento from profesor inner join departamento on departamento.id = profesor.id_departamento inner join asignatura on profesor.id_profesor = asignatura.id_profesor inner join grado on asignatura.id_grado = grado.id group by departamento.nombre;
 /*9*/
 select apellido1,apellido2,nombre from persona inner join alumno_se_matricula_asignatura on persona.id = id_alumno inner join curso_escolar on id_curso_escolar= curso_escolar.id where curso_escolar.anyo_inicio = 2014 group by apellido1,apellido2,nombre;
 /*Segundo grupo*/
