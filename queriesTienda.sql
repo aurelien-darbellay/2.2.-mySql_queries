@@ -44,7 +44,7 @@ select producto.nombre, precio, fabricante.nombre from producto left join fabric
 /*22*/
 select producto.nombre, precio, fabricante.nombre from producto left join fabricante on producto.codigo_fabricante = fabricante.codigo order by fabricante.nombre asc;
 /*23*/
-select producto.codigo, producto.nombre, producto.codigo, fabricante.nombre from producto left join fabricante on producto.codigo_fabricante = fabricante.codigo;
+select producto.codigo, producto.nombre,fabricante.nombre from producto left join fabricante on producto.codigo_fabricante = fabricante.codigo;
 /*24*/
 select producto.nombre, precio, fabricante.nombre from producto left join fabricante on producto.codigo_fabricante = fabricante.codigo order by precio asc limit 1;
 /*25*/
